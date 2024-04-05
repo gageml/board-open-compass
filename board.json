@@ -1,0 +1,91 @@
+{
+  "id": "2e1a837d-c6c4-4ce7-a877-06c53db76a89",
+  "title": "Open Compass Leaderboard",
+  "description": "Imported results from [OpenCompass 2.0 LLM leaderboard](https://rank.opencompass.org.cn/leaderboard-llm-v2).",
+  "run-select": {
+    "operation": "import",
+    "status": "completed"
+  },
+  "group-select": {
+    "group-by": {
+      "attribute": "model"
+    },
+    "max": {
+      "run-attr": "started"
+    }
+  },
+  "columns": [
+    {
+      "run-attr": "id",
+      "label": "Run ID",
+      "hide": true
+    },
+    {
+      "run-attr": "status",
+      "label": "Run Status",
+      "hide": true
+    },
+    {
+      "run-attr": "operation",
+      "label": "Operation",
+      "hide": true
+    },
+    {
+      "run-attr": "started",
+      "label": "Run Date",
+      "hide": true
+    },
+    {
+      "attribute": "model",
+      "label": "Model"
+    },
+    {
+      "attribute": "organization",
+      "label": "Organization"
+    },
+    {
+      "attribute": "released",
+      "label": "Released"
+    },
+    {
+      "attribute": "updated",
+      "label": "Updated"
+    },
+    {
+      "attribute": "type",
+      "label": "Type"
+    },
+    {
+      "attribute": "parameters",
+      "label": "Parameters"
+    },
+    {
+      "metric": "average",
+      "label": "Average"
+    },
+    {
+      "metric": "language",
+      "label": "Language"
+    },
+    {
+      "metric": "knowledge",
+      "label": "Knowledge"
+    },
+    {
+      "metric": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "metric": "math",
+      "label": "Math"
+    },
+    {
+      "metric": "code",
+      "label": "Code"
+    },
+    {
+      "metric": "agent",
+      "label": "Agent"
+    }
+  ]
+}
